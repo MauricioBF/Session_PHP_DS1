@@ -5,7 +5,7 @@
 
     $pdf->AddPage();
     
-    $pdf->SetFont('arial','B',18);
+    $pdf->SetFont('arial','B',11);
     $pdf->Cell(0,5,"Nome do usuario: ".$_SESSION['nome'],0,1,'L');
     $pdf->Ln(8);
     $pdf->Cell(0,5,"Email do usuario: ".$_SESSION['email'],0,1,'L');
