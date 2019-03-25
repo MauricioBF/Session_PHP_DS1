@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My page</title>
+</head>
+<body>
+    <form action="login.php" method="post">
+        <div style="justify-content: center;">
+            <label for="nome">Informe o nome: </label>
+            <input name="nome">
+            <label for="email">informe o email: </label>
+            <input name="email">
+            <button type="submit">enviar!</button>
+        </div>
+        <br>
+        <h5 id="error"></h5>
+    </form>
+    <script>
+        cookie = document.cookie;
+        if (cookie.indexOf("status") >= 0) {
+            p = document.querySelector('#error');
+            p.innerHTML = "Sucesso ao sair da conta!";
+        }
+    </script>
+</body>
+</html>
